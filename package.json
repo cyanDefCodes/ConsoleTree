@@ -1,0 +1,179 @@
+{
+  "name": "console-tree",
+  "displayName": "Console Tree",
+  "description": "Tree view to find, navigate and remove console statements from your project.",
+  "version": "1.0.0",
+  "publisher": "MarcosKlender",
+  "author": {
+    "name": "Klender Carrasco",
+    "email": "marcosklender@gmail.com"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Debuggers",
+    "Other",
+    "Linters"
+  ],
+  "keywords": [
+    "console",
+    "tree",
+    "debug",
+    "cleanup",
+    "javascript",
+    "typescript",
+    "console.log",
+    "remove",
+    "find",
+    "console.warn",
+    "console.error",
+    "jsx",
+    "tsx",
+    "vue"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcosklender/console-tree.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marcosklender/console-tree/issues"
+  },
+  "homepage": "https://github.com/marcosklender/console-tree#readme",
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#1e1e1e",
+    "theme": "dark"
+  },
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "console-tree.findConsoleLogs",
+        "title": "Find Console Logs",
+        "category": "Console Tree"
+      },
+      {
+        "command": "console-tree.removeAllConsoleLogs",
+        "title": "Remove All Console Logs",
+        "category": "Console Tree",
+        "icon": "$(trash)"
+      },
+      {
+        "command": "console-tree.refreshTree",
+        "title": "Refresh",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "console-tree.removeConsoleLog",
+        "title": "Remove",
+        "icon": "$(trash)"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "consoleTreeView",
+          "title": "Console Tree",
+          "icon": "images/console-tree-icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "consoleTreeView": [
+        {
+          "id": "consoleTree",
+          "name": "Console Logs",
+          "icon": "images/console-tree-icon.svg",
+          "contextualTitle": "Console Tree"
+        }
+      ]
+    },
+    "menus": {
+      "view/title": [
+        {
+          "command": "console-tree.refreshTree",
+          "when": "view == consoleTree",
+          "group": "navigation"
+        },
+        {
+          "command": "console-tree.removeAllConsoleLogs",
+          "when": "view == consoleTree",
+          "group": "navigation"
+        }
+      ],
+      "view/item/context": [
+        {
+          "command": "console-tree.removeConsoleLog",
+          "when": "view == consoleTree",
+          "group": "inline"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Console Tree",
+      "properties": {
+        "consoleTree.includePatterns": {
+          "type": "array",
+          "default": [
+            "**/*.js",
+            "**/*.ts",
+            "**/*.jsx",
+            "**/*.tsx",
+            "**/*.vue",
+            "**/*.svelte",
+            "**/*.mjs",
+            "**/*.cjs"
+          ],
+          "description": "File patterns to include when searching for console logs"
+        },
+        "consoleTree.excludePatterns": {
+          "type": "array",
+          "default": [
+            "**/node_modules/**",
+            "**/dist/**",
+            "**/build/**",
+            "**/*.min.js",
+            "**/out/**",
+            "**/.next/**",
+            "**/.nuxt/**"
+          ],
+          "description": "File patterns to exclude when searching for console logs"
+        },
+        "consoleTree.patterns": {
+          "type": "array",
+          "default": [
+            "console\\.log\\s*\\(",
+            "console\\.warn\\s*\\(",
+            "console\\.error\\s*\\(",
+            "console\\.info\\s*\\(",
+            "console\\.debug\\s*\\("
+          ],
+          "description": "Regex patterns to match console statements"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/vscode": "^1.106.0",
+    "@typescript-eslint/eslint-plugin": "^8.46.4",
+    "@typescript-eslint/parser": "^8.46.4",
+    "eslint": "^9.39.1",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@vscode/vsce": "^3.7.0"
+  }
+}
